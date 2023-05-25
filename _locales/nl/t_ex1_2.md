@@ -46,10 +46,10 @@ player.onChat("jump", function () {
 ```
 
 ## Stap 1
-### Verander jump naar level1
-Verander de naam van de chatopdracht van het blokje ``||Player:bij chatopdracht "jump"||`` naar ``||Player:bij chatopdracht "level1"||``.
+### Verander jump naar level2
+Verander de naam van de chatopdracht van het blokje ``||Player:bij chatopdracht "jump"||`` naar ``||Player:bij chatopdracht "level2"||``.
  ``` blocks
-player.onChat("level1", function () {
+player.onChat("level2", function () {
 });
 ```
 
