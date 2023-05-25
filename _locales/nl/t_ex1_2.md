@@ -106,8 +106,8 @@ Er zal pas iets gebeuren als je een chatcommando uitvoert.
 player.onChat("level1", function () {
     CodeCosmos.startingPosition()
     agent.move(FORWARD, 6)
-    agent.move(FORWARD, 6)
     agent.turn(LEFT_TURN)
+    agent.move(FORWARD, 3)
     CodeCosmos.goToNextLevel()
 });
 ```
