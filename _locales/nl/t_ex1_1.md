@@ -46,8 +46,10 @@ player.onChat("jump", function () {
 ```
 
 ## Stap 1
-### Verander jump naar level1
-Verander de naam van de chatopdracht van het blokje ``||Player:bij chatopdracht "jump"||`` naar ``||Player:bij chatopdracht "level1"||``.
+### Chatcommando
+Je hebt verschillende blokjes die je uit de gereedschapskist moet verslepen naar het programmeerveld.
+Het eerste blokje staat er al. Dit blokje zorgt ervoor dat als we straks iets typen, dat onze code wordt uitgevoerd.
+Verander de naam van de chatopdracht in het blokje ``||Player:bij chatopdracht "jump"||`` naar ``||Player:bij chatopdracht "level1"||``.
  ``` blocks
 player.onChat("level1", function () {
 });
@@ -55,7 +57,8 @@ player.onChat("level1", function () {
 
 ## Stap 2
 ### Zet Agent klaar
-Sleep het blok ``||Agent:zetKlaar||`` in het blok ``||Player:bij chatopdracht "level1"||``
+Nu moeten we de Agent klaarzetten. Hiervoor is er een blokje voorzien in de gereedschapskist, namelijk ``||CodeCosmos:zetKlaar||``.
+Sleep het blokje ``||CodeCosmos:zetKlaar||`` in het blokje ``||Player:bij chatopdracht "level1"||``. Zorg ervoor dat de blokjes met elkaar verbonden zijn.
 ``` blocks
 player.onChat("level1", function () {
     CodeCosmos.startingPosition()
@@ -64,9 +67,11 @@ player.onChat("level1", function () {
 
 ## Stap 3
 ### Beweeg Agent
-Zorg ervoor dat jouw Agent kan doorwandelen tot op het gouden blokje door het pad met de grijze blokjes te volgen. 
-Gebruik daarvoor het blok ``||Agent:Agent beweegt vooruit met ...||``.
-Verander zeker het aantal stappen dat de Agent moet zetten!
+Zorg ervoor dat jouw Agent kan doorwandelen tot op het gouden blokje door het pad met de grijze blokjes te volgen.
+Om de Agent te laten bewegen hebben we 2 verschillende blokjes: ``||Agent:agent beweegt vooruit met 1||`` en ``||Agent:agent draai links||``.
+Je kan op het pijltje drukken om de richting te veranderen.
+Sluit even de Code Builder om te kijken hoeveel blokjes jouw Agent vooruit moet gaan. 
+Sleep het juiste blokje onder ``||CodeCosmos:zetKlaar||`` en zorg ervoor dat de Agent naar het gouden blokje wandelt.
 ``` blocks
 player.onChat("level1", function () {
     CodeCosmos.startingPosition()
@@ -76,9 +81,9 @@ player.onChat("level1", function () {
 
 ## Stap 4
 ### Controleer level
-Laat de agent controleren of hij naar het volgende level mag. 
-Plaats het blokje 'ga naar volgend level' bij de code. 
-Er zal pas iets gebeuren als je een chatcommando uitvoert. 
+Laat de agent controleren of hij naar het volgende level mag.
+Plaats het blokje ``||CodeCosmos:ga naar volgend level||`` bij de code.
+Er zal pas iets gebeuren als je een chatcommando uitvoert.
 ``` blocks
 player.onChat("level1", function () {
     CodeCosmos.startingPosition()
