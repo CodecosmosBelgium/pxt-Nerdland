@@ -1,5 +1,5 @@
 ### @hideIteration true
-### @flyoutOnly false
+### @flyoutOnly true
 # Opdracht 2 - Raket lanceren
 ```block
 player.onChat("start", function () {
@@ -19,8 +19,6 @@ player.onChat("jump", function() {
 
 ## Raket bouwen
 Bekijk het instructieblad voor de juiste volgorde!
-
-### ~ tutorialhint
  ``` blocks
 player.onChat("lanceren", function () {
     CodeCosmos.startBuild()
