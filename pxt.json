@@ -7,22 +7,16 @@
         "builder": "*"
     },
     "files": [
-        "t_ex1.md",
         "main.blocks",
         "main.ts",
-        "t_no_exercise.md",
         "custom_functions.ts",
-        "t_ex2.md",
-        "t_ex1_56.md",
-        "custom_functions_EN.ts",
-        "_locales/nl/t_ex1.md",
-        "_locales/nl/t_ex1_56.md",
-        "_locales/nl/t_ex2.md",
-        "_locales/nl/t_no_exercise.md"
+        "_locales/nl/t_no_exercise.md",
+        "_locales/nl/t_ex1_1.md",
+        "_locales/nl/t_ex1_2.md",
+        "_locales/nl/t_ex1_3456.md",
+        "_locales/nl/t_ex2.md"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "public": true,
     "targetVersions": {
         "target": "1.6.30",
