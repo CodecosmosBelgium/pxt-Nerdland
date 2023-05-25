@@ -55,9 +55,9 @@ player.onChat("level2", function () {
 
 ## Stap 2
 ### Zet Agent klaar
-Sleep het blok ``||CodeCosmos:zetKlaar||`` in het blok ``||Player:bij chatopdracht "level1"||``
+Sleep het blok ``||CodeCosmos:zetKlaar||`` in het blok ``||Player:bij chatopdracht "level2"||``
 ``` blocks
-player.onChat("level1", function () {
+player.onChat("level2", function () {
     CodeCosmos.startingPosition()
 });
 ```
@@ -70,7 +70,7 @@ Je kan op het pijltje drukken om de richting te veranderen.
 Sluit even de Code Builder om te kijken hoeveel blokjes jouw Agent moet bewegen en in welke richting. 
 Sleep de juiste blokjes onder ``||CodeCosmos:zetKlaar||`` en zorg ervoor dat de Agent naar het gouden blokje wandelt.
 ``` blocks
-player.onChat("level1", function () {
+player.onChat("level2", function () {
     CodeCosmos.startingPosition()
     agent.move(FORWARD, 6)
     agent.turn(LEFT_TURN)
@@ -82,7 +82,7 @@ player.onChat("level1", function () {
 ### Controleer level
 Laat de Agent controleren of hij naar het volgende level mag.
 ``` blocks
-player.onChat("level1", function () {
+player.onChat("level2", function () {
     CodeCosmos.startingPosition()
     agent.move(FORWARD, 6)
     agent.turn(LEFT_TURN)
